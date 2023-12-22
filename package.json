@@ -8,13 +8,17 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
+    "@kyber/eslint-config": "*",
+    "@kyber/typescript-config": "*",
     "prettier": "^3.1.0",
     "turbo": "latest"
   },
   "engines": {
     "node": ">=18"
+  },
+  "volta": {
+    "node": "20.9.0",
+    "yarn": "4.0.2"
   },
   "packageManager": "yarn@4.0.2",
   "workspaces": [
