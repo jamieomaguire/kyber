@@ -1,9 +1,16 @@
 {
   "name": "@kyber/ui",
   "version": "0.0.0",
-  "private": true,
-  "exports": {},
+  "type": "module",
+  "private": false,
+  "exports": {
+    "./components/*": {
+      "types" : "./dist/components/*.d.ts",
+      "import": "./dist/components/*.js"
+    }
+  },
   "scripts": {
+    "build": "tsc",
     "lint": "eslint . --max-warnings 0"
   },
   "devDependencies": {
@@ -13,5 +20,8 @@
     "@types/node": "^20.5.2",
     "eslint": "^8.53.0",
     "typescript": "^5.2.2"
-  }
+  },
+  "sideEffects": [
+    "dist/components/*.js"
+  ]
 }

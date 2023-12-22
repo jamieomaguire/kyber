@@ -1,0 +1,27 @@
+{
+  "name": "@kyber/core",
+  "version": "0.0.0",
+  "type": "module",
+  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "lit": "^3.1.0"
+  },
+  "devDependencies": {
+    "@kyber/eslint-config": "*",
+    "@kyber/typescript-config": "*",
+    "@types/eslint": "^8.44.7",
+    "@types/node": "^20.5.2",
+    "eslint": "^8.53.0",
+    "typescript": "^5.2.2"
+  }
+}

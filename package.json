@@ -18,9 +18,8 @@
   },
   "volta": {
     "node": "20.9.0",
-    "yarn": "4.0.2"
+    "yarn": "3.5.0"
   },
-  "packageManager": "yarn@4.0.2",
   "workspaces": [
     "apps/*",
     "packages/*"
