@@ -1,5 +1,5 @@
 {
-  "extends": "@kyber/typescript-config/react-library.json",
+  "extends": "@kyber/typescript-config/base.json",
   "compilerOptions": {
     "outDir": "dist"
   },
